@@ -1,4 +1,6 @@
 PictureList::Application.routes.draw do
+  resources :shots
+
   resources :individuals
 
   resources :people

@@ -1,3 +1,4 @@
 class Individual < ActiveRecord::Base
-  belongs_to :picture
+  has_many :shots
+  has_many :pictures, :through=>:shots
 end

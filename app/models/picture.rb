@@ -1,3 +1,4 @@
 class Picture < ActiveRecord::Base
-	has_many :individuals
+	has_many :shots
+	has_many :individuals, :through=>:shots
 end
